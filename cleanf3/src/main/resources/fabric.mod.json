@@ -1,0 +1,22 @@
+{
+  "schemaVersion": 1,
+  "id": "cleanf3",
+  "version": "${version}",
+  "name": "Clean F3",
+  "description": "Removes the debug chart key hints and the 'To edit: press [F3+F6]' line from the F3 screen.",
+  "authors": ["You"],
+  "license": "MIT",
+  "environment": "client",
+  "entrypoints": {
+    "client": ["com.cleanf3.CleanF3Client"]
+  },
+  "mixins": [
+    { "config": "cleanf3.mixins.json", "environment": "client" }
+  ],
+  "depends": {
+    "fabricloader": ">=0.19.5",
+    "minecraft": "~26.3",
+    "java": ">=25",
+    "fabric-api": "*"
+  }
+}
